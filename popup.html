@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <title>AoG Raterhub</title>
+  <style>
+  body {
+    min-width: 250px;
+    min-height: 300px;
+    font-size: 15px;
+  }
+  input {
+    margin: 5px;
+    outline: none;
+  }
+  input {
+    top: 10px;
+  }
+input[type=text], select {
+    width: 100%;
+    padding: 10px 5px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+button[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button[type=submit]:hover {
+    background-color: #45a049;
+}
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 2px;
+}
+#divLink {
+    border-radius: 5px;
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 2px;
+}
+table {
+  border: 1px solid black;
+  width: 100%
+}
+  </style>
+</head>
+<body>
+  <h2>  == Raterhub Tester ==</h2>
+  <h3>Current Link</h3>
+  <div id="divLink">file:///C:/Users/Gustavo/Desktop/aog_raterhub/Raterhub%20and%20Gandalf/Rater%20Hub%20Task.htm</div>
+  <input type="text" id="tbInput"></input>
+  <button type="submit" id="btSet">Set Link</button>
+  <h3>Captured Data</h3>
+  <table>
+  <tr>
+    <th>Agent: </th>
+    <th><div id="divAgent">Agent Smith</div></th>
+  </tr>
+  <tr>
+    <th>Project Id: </th>
+    <th><div id="divPid">agent-875f</div></th>
+  </tr>
+  <tr>
+    <th>Version: </th>
+    <th><div id="divVersion">10</div></th>
+  </tr>
+  <tr>
+    <th>Locale: </th>
+    <th><div id="divLocale">en</div></th>
+  </tr>
+</table>
+  <button type="submit" id="btTest">Start Testing</button>
+  <script src="popup.js"></script>
+</body>
+</html>

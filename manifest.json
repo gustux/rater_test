@@ -1,0 +1,13 @@
+{
+  "name": "Raterhub Tester",
+  "version": "0.1",
+  "manifest_version": 2,
+
+  "description": "Easily test reviews",
+
+  "permissions": [ "storage" ],
+
+  "browser_action": {
+    "default_popup": "popup.html"
+  }
+}
